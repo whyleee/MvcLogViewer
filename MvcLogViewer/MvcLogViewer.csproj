@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Models\LogFileModel.cs" />
+    <Compile Include="MvcLogViewerAreaRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
