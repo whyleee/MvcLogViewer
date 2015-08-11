@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MvcLogViewer</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://mit-license.org/</licenseUrl>
+    <projectUrl>https://github.com/whyleee/MvcLogViewer</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tango-style_info_icon.svg/48px-Tango-style_info_icon.svg.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <copyright>Copyright © Pavel Nezhencev 2015</copyright>
+    <tags>ASP.NET MVC log logs viewer reader online area</tags>
+  </metadata>
+</package>

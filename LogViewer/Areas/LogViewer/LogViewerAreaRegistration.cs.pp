@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace MvcLogViewer
+namespace $rootnamespace$.Areas.LogViewer
 {
-    public class MvcLogViewerAreaRegistration : AreaRegistration
+    public class LogViewerAreaRegistration : AreaRegistration
     {
+        public override string AreaName
+        {
+            get { return "LogViewer"; }
+        }
+
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                name: "MvcLogViewer_Default",
+                name: "LogViewer_Default",
                 url: "logs/{log}/{action}",
                 defaults: new { controller = "Log", action = "Index", log = UrlParameter.Optional }
             );
-        }
-
-        public override string AreaName
-        {
-            get { return "MvcLogViewer"; }
         }
     }
 }

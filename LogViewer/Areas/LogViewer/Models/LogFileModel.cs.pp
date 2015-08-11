@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MvcLogViewer.Models
+namespace $rootnamespace$.Areas.LogViewer.Models
 {
     public class LogFileModel
     {

@@ -1,6 +1,6 @@
-﻿@model IEnumerable<MvcLogViewer.Models.LogFileModel>
+﻿@model IEnumerable<$rootnamespace$.Areas.LogViewer.Models.LogFileModel>
 
-<link rel="stylesheet" href="@Url.Content("/Content/bootstrap.grid.css")" />
+<link rel="stylesheet" href="~/Areas/LogViewer/Content/bootstrap.grid.css" />
 <style>
     a.delete-log {
         color: firebrick;
@@ -22,7 +22,7 @@
                 <tr>
                     <td><a href="@file.Url">@file.Name</a></td>
                     <td>@file.Size</td>
-                    <td><a class="delete-log" href="/logs/@file.Name/Delete">X</a></td>
+                    <td><a class="delete-log" href="@Url.RouteUrl("LogViewer_Default", new { log = file.Name, action = "Delete" })">X</a></td>
                 </tr>
             }
         </tbody>

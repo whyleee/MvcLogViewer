@@ -4,10 +4,11 @@ using System.Configuration;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Web.Hosting;
 using System.Web.Mvc;
-using MvcLogViewer.Models;
+using $rootnamespace$.Areas.LogViewer.Models;
 
-namespace MvcLogViewer.Controllers
+namespace $rootnamespace$.Areas.LogViewer.Controllers
 {
     [Authorize]
     public class LogController : Controller
@@ -20,7 +21,7 @@ namespace MvcLogViewer.Controllers
 
             if (_logDir.StartsWith("~/") || _logDir.StartsWith("/"))
             {
-                _logDir = Server.MapPath(_logDir);
+                _logDir = HostingEnvironment.MapPath(_logDir);
             }
         }
 
@@ -28,7 +29,7 @@ namespace MvcLogViewer.Controllers
         {
             if (!string.IsNullOrEmpty(log))
             {
-                return File("/logs/" + log, "text/plain"); // TODO: remove hardcode
+                return File(Path.Combine(_logDir, log), "text/plain");
             }
 
             var logs = Directory.GetFiles(_logDir)
