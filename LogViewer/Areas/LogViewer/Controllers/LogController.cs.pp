@@ -10,7 +10,7 @@ using $rootnamespace$.Areas.LogViewer.Models;
 
 namespace $rootnamespace$.Areas.LogViewer.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "WebAdmins, Administrators")]
     public class LogController : Controller
     {
         private readonly string _logDir;

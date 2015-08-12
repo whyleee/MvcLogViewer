@@ -11,7 +11,7 @@
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tango-style_info_icon.svg/48px-Tango-style_info_icon.svg.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <!--<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>-->
+    <releaseNotes>- Authorize admins only</releaseNotes>
     <copyright>Copyright © Pavel Nezhencev 2015</copyright>
     <tags>ASP.NET MVC log logs viewer reader online area</tags>
   </metadata>
