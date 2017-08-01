@@ -19,6 +19,11 @@ namespace $rootnamespace$.Areas.LogViewer
                 url: "logs/{log}/{action}",
                 defaults: new { controller = "Log", action = "Index", log = UrlParameter.Optional }
             );
+
+            context.MapRoute(
+                name: "LogViewer_LogsAction",
+                url: "logs/actions/{action}",
+                defaults: new {controller = "Log", action = "Index", AreaName});
         }
     }
 }
