@@ -2,17 +2,24 @@
 <package >
   <metadata>
     <id>MvcLogViewer</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <version>1.0.2</version>
+    <title>MVC Log Viewer</title>
+    <authors>Pavel Nezhencev</authors>
+    <owners>Pavel Nezhencev</owners>
     <licenseUrl>http://mit-license.org/</licenseUrl>
     <projectUrl>https://github.com/whyleee/MvcLogViewer</projectUrl>
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tango-style_info_icon.svg/48px-Tango-style_info_icon.svg.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>- Authorize admins only</releaseNotes>
+    <description>Simple MVC-based online viewer for log files.</description>
+    <releaseNotes>
+1.0.2 - added ZipAll action to to zip all non-zip files in log folder, removed filter to log files only (so all files are now shown); LogViewer.dll removed from the package
+1.0.1 - Authorize admins only
+1.0.0 - initial release
+    </releaseNotes>
     <copyright>Copyright © Pavel Nezhencev 2015</copyright>
     <tags>ASP.NET MVC log logs viewer reader online area</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="3.0.20105.1" />
+    </dependencies>
   </metadata>
 </package>
